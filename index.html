@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- SEO Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Services | Grow Your Website Traffic & Rankings</title>
+    <meta name="description" content="Professional SEO services to improve search engine rankings, increase organic traffic, and grow your online business.">
+    <meta name="keywords" content="SEO services, SEO agency, search engine optimization, local SEO, technical SEO, SEO consultant">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.example.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Professional SEO Services">
+    <meta property="og:description" content="Grow your website traffic and search engine rankings with professional SEO services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header */
+        header {
+            background: #0b1f3a;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 18px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo span {
+            color: #29c5f6;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #29c5f6;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0b1f3a, #123d68);
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #29c5f6;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #e4edf5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #29c5f6;
+            color: #062039;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #29c5f6;
+            color: white;
+        }
+
+        /* Hero Card */
+        .seo-card {
+            background: white;
+            color: #222;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .seo-card h3 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .progress {
+            margin: 18px 0;
+        }
+
+        .progress-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 7px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: #e5e5e5;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #29c5f6;
+            border-radius: 20px;
+        }
+
+        /* General Sections */
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
+            color: #0b1f3a;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Services */
+        .services {
+            background: #f7faff;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #0b1f3a;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        /* About */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 38px;
+            color: #0b1f3a;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #13a86b;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Statistics */
+        .stats {
+            background: #0b1f3a;
+            color: white;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            font-size: 40px;
+            color: #29c5f6;
+        }
+
+        .stat p {
+            color: #ddd;
+        }
+
+        /* Process */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .process {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .number {
+            width: 55px;
+            height: 55px;
+            margin: 0 auto 20px;
+            background: #29c5f6;
+            color: #062039;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .process h3 {
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .process p {
+            color: #666;
+        }
+
+        /* Contact */
+        .contact {
+            background: #f7faff;
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background: #07172b;
+            color: white;
+            padding: 45px 20px 20px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer a {
+            color: #bbb;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #26364a;
+            margin-top: 35px;
+            padding-top: 20px;
+            color: #999;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero-container,
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stat-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is SEO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SEO is the process of improving a website so it can achieve better visibility in search engine results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does SEO take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SEO results vary depending on competition, website condition, content quality and the SEO strategy used."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="logo">Rank<span>Pro</span></div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="hero-container">
+
+        <div>
+            <h1>Grow Your Business With <span>Powerful SEO</span></h1>
+
+            <p>
+                Increase your organic traffic, improve search rankings,
+                and attract more customers with a results-focused SEO strategy.
+            </p>
+
+            <a href="#contact" class="btn">Get Free SEO Audit</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+
+        <div class="seo-card">
+            <h3>Website SEO Performance</h3>
+
+            <div class="progress">
+                <div class="progress-title">
+                    <span>Technical SEO</span>
+                    <strong>92%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:92%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-title">
+                    <span>On-Page SEO</span>
+                    <strong>86%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:86%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-title">
+                    <span>Content Optimization</span>
+                    <strong>89%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width:89%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our SEO Services</h2>
+            <p>
+                Complete SEO solutions designed to help your website
+                perform better in search engines.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🔎</div>
+                <h3>Keyword Research</h3>
+                <p>
+                    Discover high-value keywords and search opportunities
+                    that can bring targeted visitors to your website.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📄</div>
+                <h3>On-Page SEO</h3>
+                <p>
+                    Optimize titles, headings, content, internal links,
+                    images and other important page elements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Technical SEO</h3>
+                <p>
+                    Improve website crawling, indexing, speed,
+                    mobile usability and technical performance.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📍</div>
+                <h3>Local SEO</h3>
+                <p>
+                    Improve your local visibility and help customers
+                    discover your business in local search results.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔗</div>
+                <h3>Link Building</h3>
+                <p>
+                    Build a sustainable backlink strategy focused on
+                    relevant and authoritative websites.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>SEO Reporting</h3>
+                <p>
+                    Track rankings, organic traffic and SEO performance
+                    with clear and easy-to-understand reports.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+
+        <div class="about">
+
+            <div>
+                <h2>SEO That Focuses on Business Growth</h2>
+
+                <p>
+                    We create practical SEO strategies that help businesses
+                    improve their visibility in search engines and reach
+                    the right audience.
+                </p>
+
+                <p>
+                    From technical optimization to content and local SEO,
+                    our approach focuses on building sustainable organic growth.
+                </p>
+
+                <ul class="check-list">
+                    <li>Data-driven SEO strategy</li>
+                    <li>Technical website optimization</li>
+                    <li>High-quality content strategy</li>
+                    <li>Transparent monthly reporting</li>
+                    <li>Long-term organic growth</li>
+                </ul>
+            </div>
+
+            <div class="seo-card">
+                <h3>Why Choose Our SEO Services?</h3>
+                <p>
+                    A successful SEO campaign combines technical optimization,
+                    useful content, keyword research, user experience and
+                    ongoing analysis.
+                </p>
+                <br>
+                <p>
+                    Our goal is to help your website become more visible
+                    and attract relevant visitors from search engines.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="stats">
+    <div class="container">
+
+        <div class="stat-grid">
+            <div class="stat">
+                <h3>150+</h3>
+                <p>Websites Optimized</p>
+            </div>
+
+            <div class="stat">
+                <h3>300%</h3>
+                <p>Potential Traffic Growth</p>
+            </div>
+
+            <div class="stat">
+                <h3>50+</h3>
+                <p>SEO Campaigns</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Performance Monitoring</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Process -->
+<section id="process">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our SEO Process</h2>
+            <p>
+                A simple, structured approach to improving your website's
+                search visibility.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process">
+                <div class="number">1</div>
+                <h3>SEO Audit</h3>
+                <p>Analyze your website and identify SEO opportunities.</p>
+            </div>
+
+            <div class="process">
+                <div class="number">2</div>
+                <h3>Strategy</h3>
+                <p>Create a customized SEO plan based on your goals.</p>
+            </div>
+
+            <div class="process">
+                <div class="number">3</div>
+                <h3>Optimization</h3>
+                <p>Implement technical, content and on-page improvements.</p>
+            </div>
+
+            <div class="process">
+                <div class="number">4</div>
+                <h3>Monitoring</h3>
+                <p>Track performance and continuously improve the strategy.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Get Your Free SEO Audit</h2>
+            <p>
+                Tell us about your website and we'll help identify
+                opportunities for organic growth.
+            </p>
+        </div>
+
+        <div class="contact-box">
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website URL</label>
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://example.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">SEO Service</label>
+
+                    <select id="service" name="service">
+                        <option value="technical-seo">Technical SEO</option>
+                        <option value="on-page-seo">On-Page SEO</option>
+                        <option value="local-seo">Local SEO</option>
+                        <option value="keyword-research">Keyword Research</option>
+                        <option value="link-building">Link Building</option>
+                        <option value="complete-seo">Complete SEO</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us about your SEO requirements..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">
+                    Request Free SEO Audit
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3>RankPro SEO</h3>
+
+            <p>
+                Professional SEO services helping businesses improve
+                search visibility, organic traffic and online growth.
+            </p>
+        </div>
+
+        <div>
+            <h3>Services</h3>
+
+            <ul>
+                <li><a href="#services">Technical SEO</a></li>
+                <li><a href="#services">On-Page SEO</a></li>
+                <li><a href="#services">Local SEO</a></li>
+                <li><a href="#services">Link Building</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#process">Our Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 RankPro SEO. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
